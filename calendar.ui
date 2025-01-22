@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>712</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QHBoxLayout" name="navigationLayout">
+      <item>
+       <widget class="QPushButton" name="prevMonthButton">
+        <property name="styleSheet">
+         <string notr="true">color:blue ; border-radius: 3px;border:5px solidgreen;</string>
+        </property>
+        <property name="text">
+         <string>ماه قبل</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="monthYearLabel">
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:blue ; border-radius: 3px;border:5px solidgreen;</string>
+        </property>
+        <property name="text">
+         <string>آبان ۱۴۰۳ / November 2024</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nextMonthButton">
+        <property name="styleSheet">
+         <string notr="true">color:blue ; border-radius: 3px;border:5px solidgreen;</string>
+        </property>
+        <property name="text">
+         <string>ماه بعد</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="calendarTable">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="rowCount">
+       <number>6</number>
+      </property>
+      <property name="columnCount">
+       <number>7</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>Blackadder ITC</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: skyblue ; color:black;border:5px solidgreen;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="calendarTab">
+       <attribute name="title">
+        <string>تقویم</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>191</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="eventsTab">
+       <attribute name="title">
+        <string>رویدادها</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
